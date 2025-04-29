@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cocokkan Warna</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    footer {
+      position: fixed;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #555;
+      font-family: 'Fredoka One', cursive;
+    }
+  </style>
+</head>
+<body>
+  <div class="game-container">
+    <h1>Cocokkan Warna!</h1>
+    <p>Warna yang harus kamu pilih:</p>
+    <h2 id="targetColor">Merah</h2>
+
+    <div class="button-container">
+      <button onclick="checkColor('Merah')" style="background-color: red;">Merah</button>
+      <button onclick="checkColor('Biru')" style="background-color: blue;">Biru</button>
+      <button onclick="checkColor('Hijau')" style="background-color: green;">Hijau</button>
+      <button onclick="checkColor('Kuning')" style="background-color: yellow;">Kuning</button>
+    </div>
+
+    <p id="result"></p>
+    <button onclick="nextColor()">Warna Selanjutnya</button>
+  </div>
+
+  <footer>
+    by <strong>Melgi Saloko</strong>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
